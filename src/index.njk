@@ -6,6 +6,18 @@ layout: layouts/base.njk
 
 <h2 id="get-yours">Get your own</h2>
 
+<form name="contact" action="/thanks" netlify>
+  <p>
+    <label>Name <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Email <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+
 <p>
   Oh hi! Admiring this site that {% if details.name %}{{ details.name }}{% else %}I{% endif %} deployed? Well, you can get one too.
 </p>
